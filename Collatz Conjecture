@@ -1,0 +1,14 @@
+Collatz Conjecture
+
+def collatz_sequence(num):
+    if num % 2 == 0:
+        print(num // 2)
+        return (num // 2)
+    else:
+        num % 2 == 1
+        print(3 * num + 1)
+        return(3 * num + 1)
+            
+n = input('Give me a number: ')
+while n != 1:
+    n = collatz_sequence(int(n))
